@@ -5,7 +5,7 @@
 makeCacheMatrix <- function(x = matrix()) {
         
 		##The function return NULL if we previously not evaluate the inverse matrix with cacheSolve
-		##m is evaluated in cacheSolve
+		##"m" is evaluated in cacheSolve
 		m <- NULL
         
         ##Get and set methods of makeCacheMatrix as likely to be used in
