@@ -4,9 +4,9 @@
 
 makeCacheMatrix <- function(x = matrix()) {
         
-		##The function return NULL if we previously not evaluate the inverse matrix with cacheSolve
-		##"m" is evaluated in cacheSolve
-		m <- NULL
+        ##The function return NULL if we previously not evaluate the inverse matrix with cacheSolve
+        ##m is evaluated in cacheSolve
+        m <- NULL
         
         ##Get and set methods of makeCacheMatrix as likely to be used in
         ##a "public" way, while setInverse and getInverse would only be 
@@ -21,13 +21,13 @@ makeCacheMatrix <- function(x = matrix()) {
         } 
         ##Get defined matrix in the current environment
         get <- function() x
-                
+        
         ##<<- operator can be used to assign a value to an object 
         ##in a different environment, this will be the environment of "cacheSolve"
         setinverse <- function(solve) m <<- solve
         getinverse <- function() m
         
-		##Return values - list with its factors names-
+        ##Return values - list with its factors names-
         list(set = set, get = get,
              setinverse = setinverse,
              getinverse = getinverse)
